@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f8f8f8;
+	font-family: 'Lato', sans-serif;
+}
+.container{
+	width:1140px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	float: left;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+}
+.logo{
+	width:30%;
+	float: left;
+}
+.logo img{
+	margin:15px 80px;
+}
+.menu-bar{
+	width: 70%;
+	float: left;
+}
+nav ul{
+	padding: 26px 10px;
+}
+nav ul li{
+	list-style: none;
+	display: inline;
+}
+nav ul li a{
+	text-decoration:none;
+	color: rgba(0,0,0,.5);
+	text-align: right;
+	padding: 10px 20px 14px 20px;
+}
+nav ul li a:hover{
+	color: rgba(0,0,0,.7);
+	border-top: 1px solid #15a4fa; 
+	border-bottom: 1px solid #15a4fa;
+}
+.topnav-right{
+	float: right;
+}
+/*Slider CSS*/
+.banner{
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+	background: url('../img/bg.png') no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.banner-element {
+	text-align: center;
+}
+.banner-element h1 {
+	font-size: 70px;
+	color: #fff;
+	text-transform: uppercase;	
+	margin: 200px 0px 10px 0px;
+}
+.banner-element hr{
+	width: 40%;
+	margin:0 auto;
+	border: 1px solid #15a4fa;
+}
+.banner-element p{
+	color: #fff;
+	margin-bottom: 50px;
+	padding-top: 20px;
+}
+.banner-element input{
+	color: #fff;
+	padding: 8px 21px;
+	font-size: 15px;
+	border: 1px solid #15a4fa;
+	background-color: transparent;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.banner-element input:hover{
+	background-color: #15a4fa66;
+	transition: 0.4s;
+}
+.banner-element img{
+	font-size: 30px;
+	margin:130px 0px 50px 0px;
+	color: #fff;
+}
+/*About Us*/
+.about-us {
+	width: 100%;
+	float: left;
+	background: #f6f9f9;
+	padding: 3% 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.about-us-element {
+	text-align: center;
+	margin: 0px 130px;
+}
+.about-us-element h2 {
+	margin: 10px;
+	font-size: 33px;
+	font-weight: 400;
+	color: #2d3950;
+}
+.about-us-element p {
+	color: #999999;
+	font-size: 16px;
+	line-height: 27px;
+}
+/*Service CSS*/
+.feature{
+	width: 100%;
+	float: left;
+	margin: 2% 0;
+	background: #fff;
+}
+.feature-element {
+	margin: 60px 10px;
+	float: left;	
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.feature-row {
+	width: 27%;
+	float: left;
+	text-align: center;
+	margin: 0px 35px;
+}
+.feature-row i {	
+	background: url('../img/bg-icon.jpg') no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.fa-mobile {	
+	font-size: 57px;
+	padding: 15px 32px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+.fa-paper-plane {
+	font-size: 34px;
+	padding: 27px 28px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+.fa-bullhorn {
+	font-size: 34px;
+	padding: 27px 28px;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+.feature-row h3 {
+	font-size: 19px;
+	padding: 10px;
+	font-weight: 400;
+	color: #2d3950;
+}
+.feature-row p {
+	font-size: 16px;
+	color: #939090;
+}
+/*Portfolio */
+.porfolio{
+	width: 100%;
+	margin: 5% auto;
+	float: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.porfolio-element {
+	text-align: center;
+}
+.porfolio-element h2 {
+	font-size: 30px;
+	color: #2d3950;
+	font-weight: 400;
+}
+.porfolio-element p {
+	font-size: 15px;
+	margin: 10px 0 40px 0;
+	color: #909090;
+	font-weight: 400;
+}
+.grid {
+	width: 33.333%;
+	float: left;
+	position: relative;
+	padding: 20px 0px 0px 0px;
+}
+.grid:hover .overlay-effect{
+	display: block;
+}
+.overlay-effect {
+	width: 95.5%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(40, 147,210, 0.83);
+	transition: .5s ease;
+	margin: 0 auto;
+	height: 93%;
+	display: none;
+}
+.overlay-effect ul {
+	position: relative;
+	top: 50%;
+}
+.overlay-effect ul li {
+	list-style: none;
+	display: inline-block;
+}
+.overlay-effect ul li a {
+	text-decoration: none;
+	border: 1px solid #fff;
+	padding: 8px 12px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	margin-right: 10px;
+}
+.overlay-effect ul li a:hover {
+	box-shadow: 0px 0px 10px #fff;
+	background-color: #24252580;
+	transition: 0.4s;
+}
+/*Contact Form CSS*/
+.contact-us{
+	width: 100%;
+	background: url('../img/bg-contact.png') no-repeat;
+	background-size: cover;
+	float: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.contact-us-element {
+	text-align: center;
+	margin: 5% 25%;
+	overflow: hidden;
+}
+.contact-us-element h2 {
+	color: #fff;
+	margin-bottom: 15px;
+	font-size: 45px;
+	font-weight: 400;
+}
+.contact-us-element p{
+	color: #939090;
+	margin-bottom: 40px;
+	display: block;
+}
+.contact-us-element form {
+	width: 85%;
+	margin: 0 auto;
+}
+.contact-us-element form .form-control {
+	width: 98%;
+	padding: 20px 5px;
+	text-indent: 20px;
+	margin-bottom: 20px;
+	background: top;
+	color: #f8f8f8;
+	border: 1px solid #c0bfbf;
+	display: block;
+	border-radius: 3px;
+}
+.contact-us-element form textarea {
+	min-height: 120px;
+	color: #bdbbbb !important;
+}
+.contact-us-element form [type="checkbox"] {
+	float: left;
+	margin-top: 10px;
+}
+.contact-us-element form p {
+	float: left;
+	margin-left: 10px;
+	margin-top: 7px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+}
+form input[type="submit"] {
+	float: right;
+	padding: 10px 38px;
+	background: transparent;
+	color: #fff;
+	border: 1px solid #1691DB;
+	border-radius: 2px;
+	font-weight: 400;
+}
+form input[type="submit"]:hover{
+	background-color:  rgba(40, 147,210, 0.4);
+	cursor:pointer;
+	border: 1px solid #fff;
+	transition: 0.4s;
+}
+/*Footer CSS*/
+.footer{
+	width: 100%;
+	background-color: #f6f9f9;
+	float: left;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.copyright-txt {
+	float: left;
+	width: 69%;
+	margin: 20px 0px 20px 75px;
+	font-size: 14px;
+	color: #999999;
+	font-weight: 400;
+}
+.social {
+	float: left;
+	margin: 20px;
+	width: 20%;
+}
+.social ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 2px;
+}
+.social ul li a {
+	padding: 7px 10px;
+	background: #15A4FA;
+	color: #fff;
+	font-size: 13px;
+	border-radius: 2px;
+}
+.social ul li a.facebook{
+	padding: 7px 12px;
+}
+.social ul li a.facebook:hover {
+	background: #4267b2;
+}
+.social ul li a.twitter:hover {
+	background: #1e9fef;
+}
+.social ul li a.google:hover {
+	background: #DD4D42;
+}
+.social ul li a.linkedin:hover {
+	background: #007BB6;
+}
